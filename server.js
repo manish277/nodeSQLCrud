@@ -34,12 +34,12 @@ require("./routes/client.routes")(app);
 
 // set port, listen for requests
 const PORT = process.env.PORT || 8452;
-// app.listen(PORT, () => {
-//   console.log(`Server is running on port ${PORT}.`);
-// });
-server.listen(8452, '127.0.0.1',function(){
-  console.log(`server listen on ip 127.0.0.1 port ${PORT} `)
-})
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}.`);
+});
+// server.listen(8452, '127.0.0.1',function(){
+//   console.log(`server listen on ip 127.0.0.1 port ${PORT} `)
+// })
 // server.listen(8080, '127.0.0.1', function () {
 //   server.close(function () {
 //     // server.listen(8452, '46.246.120.148')
